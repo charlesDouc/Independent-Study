@@ -1,4 +1,4 @@
-# Independent-Study
+# Independent Study - Fall 2018
 
 Repository for my Fall 2018 independent study.
 
