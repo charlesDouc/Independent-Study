@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PostProcessing;
 
-public class Time_Manager : MonoBehaviour {
+public class timeManager : MonoBehaviour {
 	
 	// public variables -------------------
 	public bool m_timeStop;
