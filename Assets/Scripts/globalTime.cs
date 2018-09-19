@@ -1,0 +1,74 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class globalTime : MonoBehaviour {
+
+	// public variables -------------------
+	[Header("Global time of the scene (12h model)")]
+	public float hour;
+	public float minutes;
+	public float seconds;
+	public bool PM;
+	[HideInInspector]public float hourAngle;
+	[HideInInspector]public float minuteAngle;
+	[HideInInspector]public float secondAngle;
+
+	// private variables ------------------
+	private bool m_timeStopped;
+	
+	
+	// ------------------------------------
+	// Use this for initialization
+	// ------------------------------------
+	void Start () {
+
+	}
+	
+
+	// ------------------------------------
+	// Update is called once per frame
+	// ------------------------------------
+	void Update () {
+		// Get the input from the player
+		m_timeStopped = GameObject.FindGameObjectWithTag("Player").GetComponent<timeManager>().m_timeStop;
+
+		// If the time is not stopped, calculate time
+		if (!m_timeStopped) {
+			currentTime();
+		}
+	}
+
+
+	// ------------------------------------
+	// MEthods
+	// ------------------------------------
+	// Calculate Time
+	public void currentTime() {
+		// Count time as it pass.
+		seconds += Time.deltaTime;
+
+		// Add a minute, restart seconds each 60 secs
+		if (seconds > 60f) {
+			minutes ++;
+			seconds = 0f;
+		}
+		// Add an hour, restat minutes
+		if (minutes > 59f) {
+			hour ++;
+			minutes = 0f;
+		}
+		// Restart clock at 24
+		if (hour > 11f) {
+			hour = 0f;
+			// Invert AM PM
+			PM = !PM;
+		}
+
+		// For Clocks (angles on a 360 degree)
+		hourAngle = ((seconds/60f + minutes)/60f + hour) * 30f;
+		minuteAngle = (seconds/60f + minutes) * 6f;
+		secondAngle = seconds * 6f;
+
+	}
+}
