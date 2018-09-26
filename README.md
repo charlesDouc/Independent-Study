@@ -16,6 +16,7 @@ Here's alist of all the content that can be found on the wiki of this repository
    * Assets Creation
 * [**Development Notes**](https://github.com/charlesDouc/Independent-Study/wiki/Development-Notes)
    * Prototypes
+   * [MMDA method](https://github.com/charlesDouc/Independent-Study/wiki/MDMA-Method)
    * Useful Links
 * [**Assets list**](https://docs.google.com/spreadsheets/d/106domNG62d7cV88msg2kvgtRpf6d36SfeXZ8_EvYLCU/edit?usp=sharing)
 * [**Tasks schedule**](https://docs.google.com/spreadsheets/d/1_twvtYf1YxCPqqzqUOrg9SAR4mkMZYSptmpX5ZXFcoM/edit?usp=sharing)
