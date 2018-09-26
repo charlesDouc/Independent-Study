@@ -31,7 +31,7 @@ public class globalTime : MonoBehaviour {
 	// ------------------------------------
 	void Update () {
 		// Get the input from the player
-		m_timeStopped = GameObject.FindGameObjectWithTag("Player").GetComponent<timeManager>().m_timeStop;
+		m_timeStopped = GameObject.FindGameObjectWithTag("Player").GetComponent<inputManager>().m_timeStop;
 
 		// If the time is not stopped, calculate time
 		if (!m_timeStopped) {
