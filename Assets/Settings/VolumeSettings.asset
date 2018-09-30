@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: 114339849572665496}
   - {fileID: 114914201461855468}
   - {fileID: 114698408567805600}
+  - {fileID: 114758287452644452}
 --- !u!114 &114339849572665496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +49,7 @@ MonoBehaviour:
   active: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 700
+    m_Value: 1700
     min: 0
   cascadeShadowSplitCount:
     m_OverrideState: 1
@@ -103,7 +104,7 @@ MonoBehaviour:
     m_Value: 1
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
@@ -137,6 +138,40 @@ MonoBehaviour:
     m_Value: 0.005
     min: 0
     max: 1
+--- !u!114 &114758287452644452
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
+  m_Name: HDRISky
+  m_EditorClassIdentifier: 
+  active: 1
+  rotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  exposure:
+    m_OverrideState: 0
+    m_Value: 0
+  multiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  updateMode:
+    m_OverrideState: 0
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  hdriSky:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
 --- !u!114 &114914201461855468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,10 +191,10 @@ MonoBehaviour:
     max: 360
   exposure:
     m_OverrideState: 1
-    m_Value: 1.25
+    m_Value: -2.62
   multiplier:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.77
     min: 0
   updateMode:
     m_OverrideState: 1
@@ -170,28 +205,28 @@ MonoBehaviour:
     min: 0
   sunSize:
     m_OverrideState: 1
-    m_Value: 0.04
+    m_Value: 0.025
     min: 0
     max: 1
   sunSizeConvergence:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 6.58
     min: 1
     max: 10
   atmosphereThickness:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.42
     min: 0
     max: 5
   skyTint:
     m_OverrideState: 1
-    m_Value: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
+    m_Value: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
   groundColor:
     m_OverrideState: 1
-    m_Value: {r: 0.44263977, g: 0.45245197, b: 0.46226418, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
