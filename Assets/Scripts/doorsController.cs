@@ -35,6 +35,7 @@ public class doorsController : MonoBehaviour {
 	// Methods
 	// ------------------------------------
 	private void Open() {
+		
 
 	}
 

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine;
+
 
 public class pickUpObjects : MonoBehaviour {
 
@@ -12,6 +14,16 @@ public class pickUpObjects : MonoBehaviour {
 	public GameObject m_pickUpObject;
 	public Transform guide;
 
+	// private variables ------------------
+	private GameObject m_player;
+
+	
+	// ------------------------------------
+	// Use this for initialization
+	// ------------------------------------
+	void Start () {
+		m_player = GameObject.FindGameObjectWithTag("Player");
+	}
 
 	// ------------------------------------
 	// Update is called once per frame
@@ -25,11 +37,19 @@ public class pickUpObjects : MonoBehaviour {
                Grab();
 			   PickUp();
        }
+
 	   
-	   // Change position of the dynamic object
-       if (!m_canHold && m_dynamicObject)
+	   // Change position of the dynamic object and keep velocity 0
+       if (!m_canHold && m_dynamicObject) {
            m_dynamicObject.transform.position = guide.position;
-	   
+	   }
+
+	   // Enable 3D view if right click is down
+	   if (Input.GetMouseButton(1) && m_dynamicObject && !m_canHold)  {
+		 	moveObject();
+			lockCamera(true);
+	   } else
+	   		lockCamera(false);
 	}
 
 
@@ -73,7 +93,14 @@ public class pickUpObjects : MonoBehaviour {
 
          if (!m_dynamicObject) 
              return;
+
+		 // Make sure the player is in normal time
+		 if(m_player.GetComponent<inputManager>().m_timeStop) 
+			 return;
 		 
+		 // Set the object kinematic
+	 	 m_dynamicObject.GetComponent<Rigidbody>().isKinematic = true;
+
          // Set the object as a child, deactivate gravity
          m_dynamicObject.transform.SetParent(guide);
          m_dynamicObject.GetComponent<Rigidbody>().useGravity = false;
@@ -81,9 +108,12 @@ public class pickUpObjects : MonoBehaviour {
          // Change transform settings (position and rotation)
          m_dynamicObject.transform.localRotation = transform.rotation;
          m_dynamicObject.transform.position = guide.position;
- 
+	
+		 
 		 // Can't hold more than one object 
          m_canHold = false;
+		 // Can't stop time while grabing
+		 m_player.GetComponent<inputManager>().m_canStop = false;
      }
 
 
@@ -95,6 +125,7 @@ public class pickUpObjects : MonoBehaviour {
 		 
 		 // Activate gravity and clear the dynamic object variable
          m_dynamicObject.GetComponent<Rigidbody>().useGravity = true;
+		 m_dynamicObject.GetComponent<Rigidbody>().isKinematic = false;
          m_dynamicObject = null; 
 
 		 // Add some velocity to the object (trowing) and unparent the dynamic object
@@ -103,6 +134,8 @@ public class pickUpObjects : MonoBehaviour {
 		 
 		 // Set the player to be able to grab again
          m_canHold = true;
+		 // Can stop time if no object in hand
+		 m_player.GetComponent<inputManager>().m_canStop = true;
      }
 
 
@@ -114,5 +147,21 @@ public class pickUpObjects : MonoBehaviour {
 		
 		// Deactivate the renderer of the object 
 		m_pickUpObject.gameObject.GetComponent<MeshRenderer>().enabled = false;
+	 }
+
+
+	 // Move the object in 3D when an object is grabed ------------
+	 private void moveObject() {
+		 float rotSpeed = 5f;
+
+		 m_dynamicObject.transform.Rotate(Vector3.up, Input.GetAxis("Mouse X") * rotSpeed, Space.World);
+		 m_dynamicObject.transform.Rotate(Vector3.right, Input.GetAxis("Mouse Y") * rotSpeed, Space.World);
+
+	 }
+
+
+	 // Make an object picked -------------------------------------
+	 private void lockCamera(bool state) {
+		 m_player.GetComponent<FirstPersonController>().m_canRotate = !state;
 	 }
 }

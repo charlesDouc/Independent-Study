@@ -35,7 +35,7 @@ public class watchPickUpController : MonoBehaviour {
 	private void Picked() {
 		// Get the player game object and change the state of the watch
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		player.GetComponent<inputManager>().m_hasWatch = true;
+		player.GetComponent<inputManager>().m_canStop = true;
 
 		// Destroy the object, no longer needed
 		Destroy(gameObject);

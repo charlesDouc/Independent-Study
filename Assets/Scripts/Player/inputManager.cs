@@ -6,7 +6,7 @@ using UnityEngine.Rendering.PostProcessing;
 public class inputManager : MonoBehaviour {
 	
 	// public variables -------------------
-	public bool m_hasWatch;
+	public bool m_canStop;
 	public bool m_timeStop;
 	public float m_counter = 0.0f;
 	[Space(10)]
@@ -35,7 +35,7 @@ public class inputManager : MonoBehaviour {
 	// ------------------------------------
 	void Update () {
 		// If left btn mouse is  pressed
-		if (Input.GetMouseButtonDown(0) && m_hasWatch) {
+		if (Input.GetMouseButtonDown(0) && m_canStop) {
 			// Invert the state of time
 			m_timeStop = !m_timeStop;
 
