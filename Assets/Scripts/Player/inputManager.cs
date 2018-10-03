@@ -50,12 +50,17 @@ public class inputManager : MonoBehaviour {
 				m_currentProfile.profile = m_stopTimeProfile;
 				//Debug.Log(m_currentProfile);
 
+				// Set the global variable
+				globalVariables.timeStopped = m_timeStop;
+
 				// Start a counter
 				startCounter();
 		// If time is normal
 		} else {
 				// If time is not stopped
 				m_currentProfile.profile = m_defaultProfile;
+				// Set the global variable
+				globalVariables.timeStopped = m_timeStop;
 				//Debug.Log(m_currentProfile);
 		}	
 	}

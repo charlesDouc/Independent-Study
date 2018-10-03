@@ -12,6 +12,7 @@ public class pickUpObjects : MonoBehaviour {
 	[Space (10)]
 	public GameObject m_dynamicObject;
 	public GameObject m_pickUpObject;
+	public GameObject m_buttonObject;
 	public Transform guide;
 
 	// private variables ------------------
@@ -31,11 +32,13 @@ public class pickUpObjects : MonoBehaviour {
 	void Update () {
 		// When the player presses E key 
 		if (Input.GetKeyDown(KeyCode.E)) {
-           if (!m_canHold)
+           if (!m_canHold) {
                throw_drop();
-           else 
+		   } else {
                Grab();
 			   PickUp();
+			   pushButton();
+		   }
        }
 
 	   
@@ -69,6 +72,13 @@ public class pickUpObjects : MonoBehaviour {
              if (!m_pickUpObject) 
                  m_pickUpObject = col.gameObject;
 		 }
+
+		 if (col.gameObject.tag == "Button") {
+			 // Make sure player has nothing
+             if (!m_pickUpObject) 
+                 m_buttonObject = col.gameObject;
+		 }
+
      }
  
 
@@ -85,6 +95,12 @@ public class pickUpObjects : MonoBehaviour {
              if (m_canHold)
                  m_pickUpObject = null;
          }
+
+		 if (col.gameObject.tag == "Button") {
+			 // Make sure player has nothing
+             if (m_canHold)
+                 m_buttonObject = null;
+         }
      }
 
 
@@ -95,7 +111,7 @@ public class pickUpObjects : MonoBehaviour {
              return;
 
 		 // Make sure the player is in normal time
-		 if(m_player.GetComponent<inputManager>().m_timeStop) 
+		 if(globalVariables.timeStopped) 
 			 return;
 		 
 		 // Set the object kinematic
@@ -145,8 +161,36 @@ public class pickUpObjects : MonoBehaviour {
 		if (!m_pickUpObject) 
     		return;
 		
+		// Make sure the player is in normal time
+		if(globalVariables.timeStopped) 
+			 return;
+		
 		// Deactivate the renderer of the object 
 		m_pickUpObject.gameObject.GetComponent<MeshRenderer>().enabled = false;
+	 }
+
+
+	 // Make an object picked -------------------------------------
+	 private void pushButton() {
+
+		if (!m_buttonObject) 
+    		return;
+		
+		// Make sure the player is in normal time
+		if(globalVariables.timeStopped) 
+			 return;
+
+		// Get the value of the state of the button
+		bool buttonState = m_buttonObject.gameObject.GetComponent<buttonManager>().m_isActive;
+
+		// Turn the button state on (one time)
+		if (!buttonState) {
+			buttonState = true;
+			// Update the state
+			m_buttonObject.gameObject.GetComponent<buttonManager>().m_isActive = buttonState;
+		} else
+			return; 
+
 	 }
 
 

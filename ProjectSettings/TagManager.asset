@@ -7,6 +7,7 @@ TagManager:
   - PostProcessSetting
   - DynamicObject
   - PickUpObject
+  - Button
   layers:
   - Default
   - TransparentFX

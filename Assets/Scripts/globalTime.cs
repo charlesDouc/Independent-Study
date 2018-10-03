@@ -15,7 +15,6 @@ public class globalTime : MonoBehaviour {
 	[HideInInspector]public float secondAngle;
 
 	// private variables ------------------
-	private bool m_timeStopped;
 	private bool m_restartMotion;
 	
 	
@@ -32,18 +31,15 @@ public class globalTime : MonoBehaviour {
 	// Update is called once per frame
 	// ------------------------------------
 	void Update () {
-		// Get the input from the player
-		m_timeStopped = GameObject.FindGameObjectWithTag("Player").GetComponent<inputManager>().m_timeStop;
-
 		// If the time is not stopped, calculate time
 		// Otherwise, stop motion in the scene
-		if (!m_timeStopped) 
+		if (!globalVariables.timeStopped) 
 			currentTime();
 		else if (!m_restartMotion)
 			stopMotion();
 
 		// If time just got back working
-		if (m_restartMotion && !m_timeStopped)
+		if (m_restartMotion && !globalVariables.timeStopped)
 			restartMotion();
 	}
 
