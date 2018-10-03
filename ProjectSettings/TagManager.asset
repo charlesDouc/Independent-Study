@@ -8,6 +8,7 @@ TagManager:
   - DynamicObject
   - PickUpObject
   - Button
+  - DeathZone
   layers:
   - Default
   - TransparentFX
