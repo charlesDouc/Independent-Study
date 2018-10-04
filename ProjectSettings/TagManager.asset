@@ -9,6 +9,7 @@ TagManager:
   - PickUpObject
   - Button
   - DeathZone
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
