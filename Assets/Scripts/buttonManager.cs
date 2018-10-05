@@ -12,10 +12,12 @@ public class buttonManager : MonoBehaviour {
 	public GameObject m_door;
 	public GameObject m_colorBar;
 	public float m_counterLimit = 5f;
+	public AudioClip m_clickSound;
 
 	// private variables -------------------
 	private Material m_material;
 	private float m_counter;
+	private AudioSource m_click;
 
 	// ------------------------------------
 	// Use this for initialization
@@ -25,6 +27,8 @@ public class buttonManager : MonoBehaviour {
 		GetComponent<MeshRenderer>().material = m_default;
 
 		m_counter = 0f;
+
+		m_click = gameObject.GetComponent<AudioSource>();
 		
 	}
 	
@@ -53,6 +57,9 @@ public class buttonManager : MonoBehaviour {
 		GetComponent<MeshRenderer>().material = m_active;
 		m_colorBar.GetComponent<MeshRenderer>().material = m_active;
 
+		// Play click sound
+		m_click.PlayOneShot(m_clickSound, 0.7f);
+
 		// Unable the door 
 		m_door.SetActive(false);
 
@@ -67,6 +74,9 @@ public class buttonManager : MonoBehaviour {
 	private void returnNormal() {
 		// No more active
 		m_isActive = false;
+
+		// Click Sound
+		m_click.PlayOneShot(m_clickSound, 0.7f);
 		
 		// Reset the materials
 		GetComponent<MeshRenderer>().material = m_default;
