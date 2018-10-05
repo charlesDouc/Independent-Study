@@ -5,7 +5,7 @@ using UnityEngine;
 public class rotatorController : MonoBehaviour {
 
 	public float rotSpeed;
-	[Header("Colliders")]
+	[Header("Colliders (Optionnal")]
 	public Collider m_inMovement;
 	public Collider m_static;
 
@@ -17,7 +17,7 @@ public class rotatorController : MonoBehaviour {
 		if (!globalVariables.timeStopped) {
 			rotate();
 
-		} else {
+		} else if (m_inMovement != null && m_static != null) {
 			m_inMovement.enabled = false;
 			m_static.enabled = true;
 		}
@@ -32,8 +32,10 @@ public class rotatorController : MonoBehaviour {
 		// Rotate movement
 		transform.Rotate(Vector3.right * rotSpeed);
 
-		// Set the correct collider
-		m_inMovement.enabled = true;
-		m_static.enabled = false;
+		if(m_inMovement != null && m_static != null) {
+			// Set the correct collider
+			m_inMovement.enabled = true;
+			m_static.enabled = false;
+		}
 	}
 }

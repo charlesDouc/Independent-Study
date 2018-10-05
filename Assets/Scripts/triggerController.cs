@@ -98,7 +98,7 @@ public class triggerController : MonoBehaviour {
 			return;
 
 		// Reload the scene
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene(0);
 	}
 	/* ---------------------------------------------------------------------------------------------  */
 }
