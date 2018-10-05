@@ -44,7 +44,7 @@ public class pickUpObjects : MonoBehaviour {
 	   
 	   // Change position of the dynamic object and keep velocity 0
        if (!m_canHold && m_dynamicObject) {
-           m_dynamicObject.transform.position = guide.position;
+           m_dynamicObject.GetComponent<Rigidbody>().MovePosition(guide.position);
 	   }
 
 	   // Enable 3D view if right click is down
@@ -197,9 +197,12 @@ public class pickUpObjects : MonoBehaviour {
 	 // Move the object in 3D when an object is grabed ------------
 	 private void moveObject() {
 		 float rotSpeed = 5f;
+		 float mouseDirectionX = Input.GetAxis("Mouse X") * rotSpeed;
+		 float mouseDirectionY = Input.GetAxis("Mouse Y") * rotSpeed;
+		 
 
-		 m_dynamicObject.transform.Rotate(Vector3.up, Input.GetAxis("Mouse X") * rotSpeed, Space.World);
-		 m_dynamicObject.transform.Rotate(Vector3.right, Input.GetAxis("Mouse Y") * rotSpeed, Space.World);
+
+		 m_dynamicObject.transform.Rotate(-mouseDirectionX, 0, mouseDirectionY);
 
 	 }
 
