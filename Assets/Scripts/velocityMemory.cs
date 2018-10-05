@@ -23,11 +23,13 @@ public class velocityMemory : MonoBehaviour {
 	// ------------------------------------
 	public void catchVelocity() {
 		// Catch current velocity of the object
-		m_currentVelocity = m_rb.velocity;
+		if (m_rb != null)
+			m_currentVelocity = m_rb.velocity;
 	}
 
 	public void returnVelocity() {
 		// Return the correct velocity to the object
-		m_rb.velocity = m_currentVelocity;
+		if (m_rb != null)
+			m_rb.velocity = m_currentVelocity;
 	}
 }
