@@ -20321,7 +20321,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 6360852f09dacf94e9517fb903587d98, type: 2}
+  - {fileID: 2100000, guid: 4f7e3acbb86adce4ea756046d274dcb5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38094,6 +38094,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23110374852304670, guid: 33f5e1e71da52a245ae292533d50514f,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca2eea60282f81c4e92c09be39d71ef9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f5e1e71da52a245ae292533d50514f, type: 2}
   m_IsPrefabAsset: 0
@@ -40531,14 +40536,6 @@ Prefab:
     - target: {fileID: 1484617295342590, guid: 1c69c4309e282664c98f1178e5c709ce, type: 2}
       propertyPath: m_Name
       value: ConcretePavement (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4361426125522278, guid: 1c69c4309e282664c98f1178e5c709ce, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 99.99992
-      objectReference: {fileID: 0}
-    - target: {fileID: 4361426125522278, guid: 1c69c4309e282664c98f1178e5c709ce, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 99.99992
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c69c4309e282664c98f1178e5c709ce, type: 2}
