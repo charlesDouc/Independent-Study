@@ -168,7 +168,7 @@ Material:
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
     - _InitialBend: 1
-    - _InvTilingScale: 1.7857143
+    - _InvTilingScale: 1.8518518
     - _Ior: 1
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
@@ -201,7 +201,7 @@ Material:
     - _SubsurfaceMask: 1
     - _SupportDBuffer: 1
     - _SurfaceType: 0
-    - _TexWorldScale: 0.56
+    - _TexWorldScale: 0.54
     - _TexWorldScaleEmissive: 1
     - _Thickness: 1
     - _ThicknessMultiplier: 1
