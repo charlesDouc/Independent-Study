@@ -115,7 +115,7 @@ MonoBehaviour:
     max: 1
   mipFogMaxMip:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.572
     min: 0
     max: 1
   mipFogNear:
@@ -191,10 +191,10 @@ MonoBehaviour:
     max: 360
   exposure:
     m_OverrideState: 1
-    m_Value: -2.62
+    m_Value: -4.5
   multiplier:
     m_OverrideState: 1
-    m_Value: 0.77
+    m_Value: 2.23
     min: 0
   updateMode:
     m_OverrideState: 1
@@ -220,7 +220,7 @@ MonoBehaviour:
     max: 5
   skyTint:
     m_OverrideState: 1
-    m_Value: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
