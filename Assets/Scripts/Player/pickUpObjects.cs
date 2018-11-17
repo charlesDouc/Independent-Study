@@ -181,13 +181,13 @@ public class pickUpObjects : MonoBehaviour {
 			 return;
 
 		// Get the value of the state of the button
-		bool buttonState = m_buttonObject.gameObject.GetComponent<buttonManager>().m_isActive;
+		bool buttonState = m_buttonObject.gameObject.GetComponent<buttonManager>().m_gotTriggered;
 
 		// Turn the button state on (one time)
 		if (!buttonState) {
 			buttonState = true;
 			// Update the state
-			m_buttonObject.gameObject.GetComponent<buttonManager>().m_isActive = buttonState;
+			m_buttonObject.gameObject.GetComponent<buttonManager>().m_gotTriggered = buttonState;
 		} else
 			return; 
 

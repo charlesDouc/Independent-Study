@@ -2,50 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class buttonManager : MonoBehaviour {
+public class podiumSwitch : MonoBehaviour {
 
-	// public variables -------------------
+// public variables -------------------
 	[HideInInspector]public bool m_isActive;
-	public Material m_default;
-	public Material m_active;
-	public Material m_red;
+	public Material m_unlit;
+	public Material m_lit;
 	public GameObject m_door;
-	public GameObject m_colorBar;
+	[Header ("Specific Objects")]
+	public GameObject m_switchOn;
+	public GameObject m_switchOff;
+	public GameObject m_activationLight;
+	[Header ("Delay")]
 	public float m_counterLimit = 5f;
 
 	// private variables -------------------
-	private Material m_material;
-	private float m_counter;
-	private AudioSource m_click;
-	private bool m_hasPlayed;
+	private float m_counter = 0f;
+
 
 	// ------------------------------------
 	// Use this for initialization
 	// ------------------------------------
 	void Start () {
+		// Set the button inactive
 		m_isActive = false;
-		GetComponent<MeshRenderer>().material = m_default;
+		// Set the off button
+		m_switchOff.SetActive(true);
+		m_switchOn.SetActive(false);
 
-		m_counter = 0f;
-
-		m_click = gameObject.GetComponent<AudioSource>();
-		
+		// Set the material on the light
+		m_activationLight.GetComponent<MeshRenderer>().material = m_unlit;
 	}
 	
 	// ------------------------------------
 	// Update is called once per frame
 	// ------------------------------------
 	void Update () {
-
 		// Activate effect
 		if (m_isActive) 
 			effect();
 		
 		// Deactivate the effect when counter reach limit
 		if(m_isActive && m_counter > m_counterLimit)  
-			returnNormal();
-
-		
+			returnNormal();		
 	}
 
 
@@ -53,18 +52,17 @@ public class buttonManager : MonoBehaviour {
 	// Methods
 	// ------------------------------------
 	private void effect() {
-		// Change material of objects
-		GetComponent<MeshRenderer>().material = m_active;
-		m_colorBar.GetComponent<MeshRenderer>().material = m_active;
-
-		// Play click sound
-		if (!m_hasPlayed) {
-			m_click.Play();
-			m_hasPlayed = true;
-		}
-
+		// Set the material on the light to lit
+		m_activationLight.GetComponent<MeshRenderer>().material = m_lit;
 		// Unable the door 
 		m_door.SetActive(false);
+		// Get the switch on
+		m_switchOn.SetActive(true);
+		m_switchOff.SetActive(false);
+
+		// Tell the btn manager
+		gameObject.GetComponent<buttonManager>().m_gotTriggered = true;
+
 
 		// Enable counter when time is normal
 		if (!globalVariables.timeStopped) {
@@ -76,18 +74,19 @@ public class buttonManager : MonoBehaviour {
 
 	private void returnNormal() {
 		// No more active
-		m_isActive = false;
+		//m_isActive = false;
 
-		// Click Sound
-		m_click.Play();
-		m_hasPlayed = false;
-		
 		// Reset the materials
-		GetComponent<MeshRenderer>().material = m_default;
-		m_colorBar.GetComponent<MeshRenderer>().material = m_red;
+		m_activationLight.GetComponent<MeshRenderer>().material = m_unlit;
 
-		// able the door 
+		// Reable the door 
 		m_door.SetActive(true);
+		// Get the switch off
+		m_switchOn.SetActive(false);
+		m_switchOff.SetActive(true);
+
+		// Tell the btn manager
+		gameObject.GetComponent<buttonManager>().m_gotTriggered = false;
 
 		// Reset timer
 		m_counter = 0f;
