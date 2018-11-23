@@ -1,49 +1,66 @@
 fileFormatVersion: 2
-guid: e98f61f776a13374caa1e17dcde13b03
+guid: df62e68299b0ff84cb9ff1fb6f9f9cbc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Door L
-    100002: Door L.001
-    100004: Door L.002
-    100006: Facade
-    100008: //RootNode
-    100010: Steel Ramp
-    100012: Wall Left
-    100014: Wall Right
-    400000: Door L
-    400002: Door L.001
-    400004: Door L.002
-    400006: Facade
-    400008: //RootNode
-    400010: Steel Ramp
-    400012: Wall Left
-    400014: Wall Right
-    2100000: Door
-    2100002: Walls
-    2100004: Steel Ramp
-    2100006: Facade
-    2300000: Door L
-    2300002: Door L.001
-    2300004: Door L.002
-    2300006: Facade
-    2300008: Steel Ramp
-    2300010: Wall Left
-    2300012: Wall Right
-    3300000: Door L
-    3300002: Door L.001
-    3300004: Door L.002
-    3300006: Facade
-    3300008: Steel Ramp
-    3300010: Wall Left
-    3300012: Wall Right
-    4300000: Door L.002
-    4300002: Door L.001
-    4300004: Wall Left
-    4300006: Wall Right
-    4300008: Steel Ramp
-    4300010: Facade
-    4300012: Door L
+    100000: Door
+    100002: Door Frame
+    100004: Facade
+    100006: //RootNode
+    100008: Roof
+    100010: Structure
+    100012: Windows MR.000
+    100014: Windows MR.001
+    100016: Windows MR.002
+    100018: Windows MR.003
+    100020: Windows TR.001
+    400000: Door
+    400002: Door Frame
+    400004: Facade
+    400006: //RootNode
+    400008: Roof
+    400010: Structure
+    400012: Windows MR.000
+    400014: Windows MR.001
+    400016: Windows MR.002
+    400018: Windows MR.003
+    400020: Windows TR.001
+    2100000: Structure
+    2100002: Windows
+    2100004: Roof
+    2100006: Door Frame
+    2100008: Door
+    2100010: Facade
+    2300000: Door
+    2300002: Door Frame
+    2300004: Facade
+    2300006: Roof
+    2300008: Structure
+    2300010: Windows MR.000
+    2300012: Windows MR.001
+    2300014: Windows MR.002
+    2300016: Windows MR.003
+    2300018: Windows TR.001
+    3300000: Door
+    3300002: Door Frame
+    3300004: Facade
+    3300006: Roof
+    3300008: Structure
+    3300010: Windows MR.000
+    3300012: Windows MR.001
+    3300014: Windows MR.002
+    3300016: Windows MR.003
+    3300018: Windows TR.001
+    4300000: Structure
+    4300002: Windows MR.001
+    4300004: Windows MR.000
+    4300006: Windows MR.003
+    4300008: Windows TR.001
+    4300010: Windows MR.002
+    4300012: Roof
+    4300014: Door Frame
+    4300016: Door
+    4300018: Facade
   externalObjects: {}
   materials:
     importMaterials: 1

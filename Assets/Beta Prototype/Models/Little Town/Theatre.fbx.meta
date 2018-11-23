@@ -3,43 +3,37 @@ guid: 0d0ebdaa46b1f414997795a4adbcbaec
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Door Frame
-    100002: Entrance
-    100004: Facade
-    100006: Frame L
-    100008: Frame R
-    100010: Panel
-    100012: //RootNode
-    400000: Door Frame
-    400002: Entrance
-    400004: Facade
-    400006: Frame L
-    400008: Frame R
-    400010: Panel
-    400012: //RootNode
+    100000: Entrance
+    100002: Facade
+    100004: Frame L
+    100006: Frame R
+    100008: Panel
+    100010: //RootNode
+    400000: Entrance
+    400002: Facade
+    400004: Frame L
+    400006: Frame R
+    400008: Panel
+    400010: //RootNode
     2100000: Frame
-    2100002: Door Frame
-    2100004: Entrance
-    2100006: Panel
-    2100008: Facade
-    2300000: Door Frame
-    2300002: Entrance
-    2300004: Facade
-    2300006: Frame L
-    2300008: Frame R
-    2300010: Panel
-    3300000: Door Frame
-    3300002: Entrance
-    3300004: Facade
-    3300006: Frame L
-    3300008: Frame R
-    3300010: Panel
+    2100002: Entrance
+    2100004: Panel
+    2100006: Facade
+    2300000: Entrance
+    2300002: Facade
+    2300004: Frame L
+    2300006: Frame R
+    2300008: Panel
+    3300000: Entrance
+    3300002: Facade
+    3300004: Frame L
+    3300006: Frame R
+    3300008: Panel
     4300000: Frame L
     4300002: Frame R
-    4300004: Door Frame
-    4300006: Entrance
-    4300008: Panel
-    4300010: Facade
+    4300004: Entrance
+    4300006: Panel
+    4300008: Facade
   externalObjects: {}
   materials:
     importMaterials: 1
