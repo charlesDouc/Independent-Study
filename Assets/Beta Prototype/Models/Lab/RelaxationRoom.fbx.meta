@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: 3a4de6cc675f2094891f0abf3aa7faa4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ceiling Light
+    100002: Column B.L
+    100004: Column B.R
+    100006: Column T.L
+    100008: Column T.R
+    100010: Cube
+    100012: Cube.001
+    100014: Cube.002
+    100016: Cube.003
+    100018: Cube.004
+    100020: Cube.005
+    100022: Cube.006
+    100024: Cylinder
+    100026: Cylinder.001
+    100028: Cylinder.002
+    100030: Cylinder.003
+    100032: Floor
+    100034: Foam Sample
+    100036: Foam Square Sample.004
+    100038: Foam Square Sample.025
+    100040: Foam Wall
+    100042: Foam Wall.001
+    100044: Grid Ceiling
+    100046: Lustre
+    100048: Map
+    100050: Mirror Windows
+    100052: plate
+    100054: Podium
+    100056: //RootNode
+    100058: Side Table
+    100060: Wall Back
+    100062: Wall Front
+    100064: Wall Left
+    100066: Wall R
+    400000: Ceiling Light
+    400002: Column B.L
+    400004: Column B.R
+    400006: Column T.L
+    400008: Column T.R
+    400010: Cube
+    400012: Cube.001
+    400014: Cube.002
+    400016: Cube.003
+    400018: Cube.004
+    400020: Cube.005
+    400022: Cube.006
+    400024: Cylinder
+    400026: Cylinder.001
+    400028: Cylinder.002
+    400030: Cylinder.003
+    400032: Floor
+    400034: Foam Sample
+    400036: Foam Square Sample.004
+    400038: Foam Square Sample.025
+    400040: Foam Wall
+    400042: Foam Wall.001
+    400044: Grid Ceiling
+    400046: Lustre
+    400048: Map
+    400050: Mirror Windows
+    400052: plate
+    400054: Podium
+    400056: //RootNode
+    400058: Side Table
+    400060: Wall Back
+    400062: Wall Front
+    400064: Wall Left
+    400066: Wall R
+    2100000: No Name
+    2100002: Foam Tile
+    2100004: Column
+    2100006: Material
+    2100008: Chronos Side Table
+    2300000: Ceiling Light
+    2300002: Column B.L
+    2300004: Column B.R
+    2300006: Column T.L
+    2300008: Column T.R
+    2300010: Cube
+    2300012: Cube.001
+    2300014: Cube.002
+    2300016: Cube.003
+    2300018: Cube.004
+    2300020: Cube.005
+    2300022: Cube.006
+    2300024: Cylinder
+    2300026: Cylinder.001
+    2300028: Cylinder.002
+    2300030: Cylinder.003
+    2300032: Floor
+    2300034: Foam Sample
+    2300036: Foam Square Sample.004
+    2300038: Foam Square Sample.025
+    2300040: Foam Wall
+    2300042: Foam Wall.001
+    2300044: Grid Ceiling
+    2300046: Lustre
+    2300048: Map
+    2300050: Mirror Windows
+    2300052: plate
+    2300054: Podium
+    2300056: Side Table
+    2300058: Wall Back
+    2300060: Wall Front
+    2300062: Wall Left
+    2300064: Wall R
+    3300000: Ceiling Light
+    3300002: Column B.L
+    3300004: Column B.R
+    3300006: Column T.L
+    3300008: Column T.R
+    3300010: Cube
+    3300012: Cube.001
+    3300014: Cube.002
+    3300016: Cube.003
+    3300018: Cube.004
+    3300020: Cube.005
+    3300022: Cube.006
+    3300024: Cylinder
+    3300026: Cylinder.001
+    3300028: Cylinder.002
+    3300030: Cylinder.003
+    3300032: Floor
+    3300034: Foam Sample
+    3300036: Foam Square Sample.004
+    3300038: Foam Square Sample.025
+    3300040: Foam Wall
+    3300042: Foam Wall.001
+    3300044: Grid Ceiling
+    3300046: Lustre
+    3300048: Map
+    3300050: Mirror Windows
+    3300052: plate
+    3300054: Podium
+    3300056: Side Table
+    3300058: Wall Back
+    3300060: Wall Front
+    3300062: Wall Left
+    3300064: Wall R
+    4300000: Cube.006
+    4300002: Cube.005
+    4300004: Cube.004
+    4300006: Cube.003
+    4300008: Cube.002
+    4300010: Cylinder.003
+    4300012: Cylinder.002
+    4300014: Cylinder.001
+    4300016: Cylinder
+    4300018: Mirror Windows
+    4300020: Foam Square Sample.025
+    4300022: Foam Square Sample.004
+    4300024: Grid Ceiling
+    4300026: Lustre
+    4300028: Ceiling Light
+    4300030: Cube.001
+    4300032: Cube
+    4300034: Column T.L
+    4300036: Wall Left
+    4300038: Column B.L
+    4300040: Column T.R
+    4300042: Wall Front
+    4300044: Column B.R
+    4300046: plate
+    4300048: Podium
+    4300050: Foam Wall
+    4300052: Map
+    4300054: Foam Sample
+    4300056: Foam Wall.001
+    4300058: Side Table
+    4300060: Wall Back
+    4300062: Floor
+    4300064: Wall R
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
