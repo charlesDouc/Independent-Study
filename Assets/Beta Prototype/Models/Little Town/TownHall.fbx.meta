@@ -19,8 +19,12 @@ ModelImporter:
     100026: Windows.003
     100028: Windows.004
     100030: Windows.005
-    100032: Windows.008
-    100034: Windows.009
+    100032: Windows.006
+    100034: Windows.007
+    100036: Windows.008
+    100038: Windows.009
+    100040: Windows.010
+    100042: Windows.011
     400000: Clock Tower
     400002: Door
     400004: Door Frame
@@ -37,8 +41,12 @@ ModelImporter:
     400026: Windows.003
     400028: Windows.004
     400030: Windows.005
-    400032: Windows.008
-    400034: Windows.009
+    400032: Windows.006
+    400034: Windows.007
+    400036: Windows.008
+    400038: Windows.009
+    400040: Windows.010
+    400042: Windows.011
     2100000: Window
     2100002: Door
     2100004: Door Frame
@@ -63,8 +71,12 @@ ModelImporter:
     2300024: Windows.003
     2300026: Windows.004
     2300028: Windows.005
-    2300030: Windows.008
-    2300032: Windows.009
+    2300030: Windows.006
+    2300032: Windows.007
+    2300034: Windows.008
+    2300036: Windows.009
+    2300038: Windows.010
+    2300040: Windows.011
     3300000: Clock Tower
     3300002: Door
     3300004: Door Frame
@@ -80,25 +92,33 @@ ModelImporter:
     3300024: Windows.003
     3300026: Windows.004
     3300028: Windows.005
-    3300030: Windows.008
-    3300032: Windows.009
-    4300000: Windows.005
-    4300002: Windows.004
-    4300004: Windows.003
-    4300006: Windows.002
-    4300008: Windows.009
-    4300010: Windows.008
-    4300012: Door.002
-    4300014: Door
-    4300016: Door Frame
-    4300018: Separator
-    4300020: Windows.001
-    4300022: Windows
-    4300024: Temple Roof
-    4300026: Entrance
-    4300028: Clock Tower
-    4300030: Roof
-    4300032: Facade
+    3300030: Windows.006
+    3300032: Windows.007
+    3300034: Windows.008
+    3300036: Windows.009
+    3300038: Windows.010
+    3300040: Windows.011
+    4300000: Windows.011
+    4300002: Windows.010
+    4300004: Windows.007
+    4300006: Windows.006
+    4300008: Windows.005
+    4300010: Windows.004
+    4300012: Windows.003
+    4300014: Windows.002
+    4300016: Windows.009
+    4300018: Windows.008
+    4300020: Door.002
+    4300022: Door
+    4300024: Door Frame
+    4300026: Separator
+    4300028: Windows.001
+    4300030: Windows
+    4300032: Temple Roof
+    4300034: Entrance
+    4300036: Clock Tower
+    4300038: Roof
+    4300040: Facade
   externalObjects: {}
   materials:
     importMaterials: 1
