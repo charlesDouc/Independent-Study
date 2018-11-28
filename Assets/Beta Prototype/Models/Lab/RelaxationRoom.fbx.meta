@@ -8,224 +8,194 @@ ModelImporter:
     100004: Column B.R
     100006: Column T.L
     100008: Column T.R
-    100010: Cube
-    100012: Cube.001
-    100014: Cube.002
-    100016: Cube.003
-    100018: Cube.004
-    100020: Cube.005
-    100022: Cube.006
-    100024: Cube.007
-    100026: Cube.008
-    100028: Cube.009
-    100030: Cube.010
-    100032: Cube.011
-    100034: Cylinder
-    100036: Cylinder.002
-    100038: Cylinder.003
-    100040: Floor
-    100042: Foam Sample.004
-    100044: Foam Sample.005
-    100046: Foam Sample.006
-    100048: Foam Sample.007
-    100050: Foam Wall Back Left
-    100052: Foam Wall Back Right
-    100054: Foam Wall Left One
-    100056: Foam Wall Left Two
-    100058: Foam Wall Right One
-    100060: Foam Wall Right Two
-    100062: Grid Ceiling
-    100064: Light Ceiling
-    100066: Map
-    100068: Mirror Windows
-    100070: plate
-    100072: Podium
-    100074: //RootNode
-    100076: Side Table
-    100078: Wall Back
-    100080: Wall Front
-    100082: Wall Left
-    100084: Wall R
+    100010: Cube.005
+    100012: Cube.006
+    100014: Door
+    100016: Door Frame
+    100018: Exit Door Bar
+    100020: Exit Door Frame
+    100022: Exit Sign
+    100024: ExitDoor
+    100026: Floor
+    100028: Foam Sample.004
+    100030: Foam Sample.005
+    100032: Foam Sample.006
+    100034: Foam Sample.007
+    100036: Foam Wall Back Left
+    100038: Foam Wall Back Right
+    100040: Foam Wall Left One
+    100042: Foam Wall Left Two
+    100044: Foam Wall Right One
+    100046: Foam Wall Right Two
+    100048: Grid Ceiling
+    100050: Light Ceiling
+    100052: Map
+    100054: Mirror Windows
+    100056: Podium
+    100058: //RootNode
+    100060: Score Table
+    100062: Side Table
+    100064: Wall Back
+    100066: Wall Front
+    100068: Wall Left
+    100070: Wall R
     400000: Cables
     400002: Column B.L
     400004: Column B.R
     400006: Column T.L
     400008: Column T.R
-    400010: Cube
-    400012: Cube.001
-    400014: Cube.002
-    400016: Cube.003
-    400018: Cube.004
-    400020: Cube.005
-    400022: Cube.006
-    400024: Cube.007
-    400026: Cube.008
-    400028: Cube.009
-    400030: Cube.010
-    400032: Cube.011
-    400034: Cylinder
-    400036: Cylinder.002
-    400038: Cylinder.003
-    400040: Floor
-    400042: Foam Sample.004
-    400044: Foam Sample.005
-    400046: Foam Sample.006
-    400048: Foam Sample.007
-    400050: Foam Wall Back Left
-    400052: Foam Wall Back Right
-    400054: Foam Wall Left One
-    400056: Foam Wall Left Two
-    400058: Foam Wall Right One
-    400060: Foam Wall Right Two
-    400062: Grid Ceiling
-    400064: Light Ceiling
-    400066: Map
-    400068: Mirror Windows
-    400070: plate
-    400072: Podium
-    400074: //RootNode
-    400076: Side Table
-    400078: Wall Back
-    400080: Wall Front
-    400082: Wall Left
-    400084: Wall R
-    2100000: No Name
+    400010: Cube.005
+    400012: Cube.006
+    400014: Door
+    400016: Door Frame
+    400018: Exit Door Bar
+    400020: Exit Door Frame
+    400022: Exit Sign
+    400024: ExitDoor
+    400026: Floor
+    400028: Foam Sample.004
+    400030: Foam Sample.005
+    400032: Foam Sample.006
+    400034: Foam Sample.007
+    400036: Foam Wall Back Left
+    400038: Foam Wall Back Right
+    400040: Foam Wall Left One
+    400042: Foam Wall Left Two
+    400044: Foam Wall Right One
+    400046: Foam Wall Right Two
+    400048: Grid Ceiling
+    400050: Light Ceiling
+    400052: Map
+    400054: Mirror Windows
+    400056: Podium
+    400058: //RootNode
+    400060: Score Table
+    400062: Side Table
+    400064: Wall Back
+    400066: Wall Front
+    400068: Wall Left
+    400070: Wall R
+    2100000: Exit Door Bar
     2100002: Cables
-    2100004: Foam Tile
-    2100006: Door Frame
-    2100008: Mirror
-    2100010: Grid Ceiling
-    2100012: Score Table
-    2100014: Column
-    2100016: Material
-    2100018: Map
-    2100020: Chronos Side Table
+    2100004: Exit Sign
+    2100006: Foam Tile
+    2100008: Exit Door
+    2100010: Exit Door Frame
+    2100012: No Name
+    2100014: Door Frame
+    2100016: Door
+    2100018: Mirror
+    2100020: Grid Ceiling
+    2100022: Score Table
+    2100024: Column
+    2100026: Material
+    2100028: Map
+    2100030: Chronos Side Table
     2300000: Cables
     2300002: Column B.L
     2300004: Column B.R
     2300006: Column T.L
     2300008: Column T.R
-    2300010: Cube
-    2300012: Cube.001
-    2300014: Cube.002
-    2300016: Cube.003
-    2300018: Cube.004
-    2300020: Cube.005
-    2300022: Cube.006
-    2300024: Cube.007
-    2300026: Cube.008
-    2300028: Cube.009
-    2300030: Cube.010
-    2300032: Cube.011
-    2300034: Cylinder
-    2300036: Cylinder.002
-    2300038: Cylinder.003
-    2300040: Floor
-    2300042: Foam Sample.004
-    2300044: Foam Sample.005
-    2300046: Foam Sample.006
-    2300048: Foam Sample.007
-    2300050: Foam Wall Back Left
-    2300052: Foam Wall Back Right
-    2300054: Foam Wall Left One
-    2300056: Foam Wall Left Two
-    2300058: Foam Wall Right One
-    2300060: Foam Wall Right Two
-    2300062: Grid Ceiling
-    2300064: Light Ceiling
-    2300066: Map
-    2300068: Mirror Windows
-    2300070: plate
-    2300072: Podium
-    2300074: Side Table
-    2300076: Wall Back
-    2300078: Wall Front
-    2300080: Wall Left
-    2300082: Wall R
+    2300010: Cube.005
+    2300012: Cube.006
+    2300014: Door
+    2300016: Door Frame
+    2300018: Exit Door Bar
+    2300020: Exit Door Frame
+    2300022: Exit Sign
+    2300024: ExitDoor
+    2300026: Floor
+    2300028: Foam Sample.004
+    2300030: Foam Sample.005
+    2300032: Foam Sample.006
+    2300034: Foam Sample.007
+    2300036: Foam Wall Back Left
+    2300038: Foam Wall Back Right
+    2300040: Foam Wall Left One
+    2300042: Foam Wall Left Two
+    2300044: Foam Wall Right One
+    2300046: Foam Wall Right Two
+    2300048: Grid Ceiling
+    2300050: Light Ceiling
+    2300052: Map
+    2300054: Mirror Windows
+    2300056: Podium
+    2300058: Score Table
+    2300060: Side Table
+    2300062: Wall Back
+    2300064: Wall Front
+    2300066: Wall Left
+    2300068: Wall R
     3300000: Cables
     3300002: Column B.L
     3300004: Column B.R
     3300006: Column T.L
     3300008: Column T.R
-    3300010: Cube
-    3300012: Cube.001
-    3300014: Cube.002
-    3300016: Cube.003
-    3300018: Cube.004
-    3300020: Cube.005
-    3300022: Cube.006
-    3300024: Cube.007
-    3300026: Cube.008
-    3300028: Cube.009
-    3300030: Cube.010
-    3300032: Cube.011
-    3300034: Cylinder
-    3300036: Cylinder.002
-    3300038: Cylinder.003
-    3300040: Floor
-    3300042: Foam Sample.004
-    3300044: Foam Sample.005
-    3300046: Foam Sample.006
-    3300048: Foam Sample.007
-    3300050: Foam Wall Back Left
-    3300052: Foam Wall Back Right
-    3300054: Foam Wall Left One
-    3300056: Foam Wall Left Two
-    3300058: Foam Wall Right One
-    3300060: Foam Wall Right Two
-    3300062: Grid Ceiling
-    3300064: Light Ceiling
-    3300066: Map
-    3300068: Mirror Windows
-    3300070: plate
-    3300072: Podium
-    3300074: Side Table
-    3300076: Wall Back
-    3300078: Wall Front
-    3300080: Wall Left
-    3300082: Wall R
-    4300000: Cylinder
-    4300002: Cube.011
-    4300004: Cables
-    4300006: Cube.010
-    4300008: Cube.009
-    4300010: Foam Wall Back Left
-    4300012: Foam Wall Back Right
-    4300014: Foam Sample.007
-    4300016: Foam Sample.006
-    4300018: Foam Sample.005
-    4300020: Foam Sample.004
-    4300022: Cube.008
-    4300024: Cube.007
-    4300026: Cube.006
-    4300028: Cube.005
-    4300030: Cube.004
-    4300032: Cube.003
-    4300034: Cube.002
-    4300036: Cylinder.003
-    4300038: Cylinder.002
-    4300040: Mirror Windows
-    4300042: Foam Wall Left One
-    4300044: Foam Wall Left Two
-    4300046: Grid Ceiling
-    4300048: Light Ceiling
-    4300050: Cube.001
-    4300052: Cube
-    4300054: Column T.L
-    4300056: Wall Left
-    4300058: Column B.L
-    4300060: Column T.R
-    4300062: Wall Front
-    4300064: Column B.R
-    4300066: plate
-    4300068: Podium
-    4300070: Foam Wall Right One
-    4300072: Map
-    4300074: Foam Wall Right Two
-    4300076: Side Table
-    4300078: Wall Back
-    4300080: Floor
-    4300082: Wall R
+    3300010: Cube.005
+    3300012: Cube.006
+    3300014: Door
+    3300016: Door Frame
+    3300018: Exit Door Bar
+    3300020: Exit Door Frame
+    3300022: Exit Sign
+    3300024: ExitDoor
+    3300026: Floor
+    3300028: Foam Sample.004
+    3300030: Foam Sample.005
+    3300032: Foam Sample.006
+    3300034: Foam Sample.007
+    3300036: Foam Wall Back Left
+    3300038: Foam Wall Back Right
+    3300040: Foam Wall Left One
+    3300042: Foam Wall Left Two
+    3300044: Foam Wall Right One
+    3300046: Foam Wall Right Two
+    3300048: Grid Ceiling
+    3300050: Light Ceiling
+    3300052: Map
+    3300054: Mirror Windows
+    3300056: Podium
+    3300058: Score Table
+    3300060: Side Table
+    3300062: Wall Back
+    3300064: Wall Front
+    3300066: Wall Left
+    3300068: Wall R
+    4300000: Exit Door Bar
+    4300002: Cables
+    4300004: Exit Sign
+    4300006: Foam Wall Back Left
+    4300008: Foam Wall Back Right
+    4300010: Foam Sample.007
+    4300012: Foam Sample.006
+    4300014: Foam Sample.005
+    4300016: Foam Sample.004
+    4300018: ExitDoor
+    4300020: Exit Door Frame
+    4300022: Cube.006
+    4300024: Cube.005
+    4300026: Door Frame
+    4300028: Door
+    4300030: Mirror Windows
+    4300032: Foam Wall Left One
+    4300034: Foam Wall Left Two
+    4300036: Grid Ceiling
+    4300038: Light Ceiling
+    4300040: Score Table
+    4300042: Column T.L
+    4300044: Wall Left
+    4300046: Column B.L
+    4300048: Column T.R
+    4300050: Wall Front
+    4300052: Column B.R
+    4300054: Podium
+    4300056: Foam Wall Right One
+    4300058: Map
+    4300060: Foam Wall Right Two
+    4300062: Side Table
+    4300064: Wall Back
+    4300066: Floor
+    4300068: Wall R
   externalObjects: {}
   materials:
     importMaterials: 1
