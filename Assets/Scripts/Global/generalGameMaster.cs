@@ -30,7 +30,11 @@ public class generalGameMaster : MonoBehaviour {
 			Application.Quit();
 
 		// Restart the game
-		if(Input.GetKeyDown(KeyCode.Backspace))
+		if(Input.GetKeyDown(KeyCode.LeftArrow))
 			SceneManager.LoadScene(0);
+		
+		if(Input.GetKeyDown(KeyCode.RightArrow))
+			SceneManager.LoadScene(1);
+
 	}
 }
