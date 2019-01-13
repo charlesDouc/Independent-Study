@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Relaxation Room.unity
+- path: Assets/Scenes/Greybox.unity
   isLoaded: 1
   isActive: 1
