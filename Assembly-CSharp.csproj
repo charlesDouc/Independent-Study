@@ -53,8 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Player\inputManager.cs" />
-     <Compile Include="Assets\Scripts\Player\velocityMemory.cs" />
+     <Compile Include="Assets\Scripts\Global\globalVariables.cs" />
+     <Compile Include="Assets\Scripts\Player\inputController.cs" />
+     <Compile Include="Assets\Scripts\velocityMemory.cs" />
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>C:/Users/Charles/Documents/GitHub/Independent-Study/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
