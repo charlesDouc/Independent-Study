@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PostProcessSetting
   - Button
+  - DynamicObject
   layers:
   - Default
   - TransparentFX

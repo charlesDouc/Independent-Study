@@ -53,10 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Global\globalTime.cs" />
      <Compile Include="Assets\Scripts\Global\globalVariables.cs" />
      <Compile Include="Assets\Scripts\Greybox\btnManager.cs" />
      <Compile Include="Assets\Scripts\Player\intervalInputs.cs" />
      <Compile Include="Assets\Scripts\Player\pickUpManager.cs" />
+     <Compile Include="Assets\Scripts\UI\actionIconController.cs" />
      <Compile Include="Assets\Scripts\velocityMemory.cs" />
  <Reference Include="Unity.ProGrids">
  <HintPath>C:/Users/Charles/Documents/GitHub/Independent-Study/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
