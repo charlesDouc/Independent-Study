@@ -8,7 +8,6 @@ public class intervalInputs : MonoBehaviour
     // public variables ---------------------
     public bool m_canStop;								// If the player can stop time
 	public bool m_timeStop;								// State of time (reality/interval)
-	public float m_counter = 0.0f;						// Counter when in the interval
 	[Space(10)]		
 	public PostProcessProfile m_intervalProfile;		// Post Processing profile for the Interval
 	public PostProcessProfile m_defaultProfile;			// Post Processing profile for Reality
@@ -18,6 +17,7 @@ public class intervalInputs : MonoBehaviour
 	// private variables ------------------
 	private PostProcessVolume m_currentProfile;			// Current Post Processing profile in use
 	private GameObject m_ppSetting;						// Post Processing setting object
+	private float m_counter = 0.0f;						// Counter when in the interval
 
     // --------------------------------------
     // Start is called before update
@@ -99,11 +99,4 @@ public class intervalInputs : MonoBehaviour
 		// Catch the object the player is colliding with
 		m_proximityObject = col.gameObject;
 	}
-
-
-
-
-
-
-
 }

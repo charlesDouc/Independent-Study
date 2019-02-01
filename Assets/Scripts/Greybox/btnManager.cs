@@ -11,6 +11,7 @@ public class btnManager : MonoBehaviour
     [Header("Events")]
     public bool m_on = false;           // State of the btn on/off
     public bool m_doorBtn;              // If the btn serves for a door
+    public bool m_canonBtn;             // If the btn serves for a canon
     [Header("Special Data")]
     public float m_counterLimit;        // Float for the limit of the counter
     public GameObject m_target;         // Specific target (door, trigger, object)
@@ -18,6 +19,7 @@ public class btnManager : MonoBehaviour
 
     // private variables ---------------------
     private float m_timer = 0.0f;       // Timer when btn is activated
+    private bool m_oneShot;             // Only do the effect once after activation
 
 
     // --------------------------------------
@@ -30,6 +32,9 @@ public class btnManager : MonoBehaviour
             gameObject.GetComponent<Renderer>().material = m_red;
         else
             gameObject.GetComponent<Renderer>().material = m_green;
+
+        // Set the one shot to false as default
+        m_oneShot = false;
 
         // If the target is a door
         if (m_doorBtn && m_target != null)
@@ -45,9 +50,12 @@ public class btnManager : MonoBehaviour
         if (m_on)
         {
             runTimer();
-            btnEffect();
+
+            // check if the effect is a one shot deal
+            if (!m_oneShot)
+                btnEffect();
         } 
-        else  // if off, reset                      
+        else if (!m_on) // if off, reset                      
             Start(); 
         
     }
@@ -75,7 +83,15 @@ public class btnManager : MonoBehaviour
         gameObject.GetComponent<Renderer>().material = m_green;
 
         // If the target is a door
-        if (m_doorBtn && m_target != null)
+        if (m_doorBtn && m_target)
             m_target.SetActive(false);
+
+        // If the target is a canon
+        if (m_canonBtn && m_target)
+        {
+            // Only shot once
+            m_oneShot = true;
+            m_target.GetComponent<canonController>().m_fire = true;
+        }
     }
 }

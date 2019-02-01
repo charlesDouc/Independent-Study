@@ -5,7 +5,6 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class pickUpManager : MonoBehaviour
 {
-
     // public variables ---------------------
     public bool m_canInteract = true;           // Allow interaction with objects
     public GameObject m_proximityObject;        // Target catched by a trigger
