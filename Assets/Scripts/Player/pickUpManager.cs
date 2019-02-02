@@ -109,17 +109,33 @@ public class pickUpManager : MonoBehaviour
     private void OnTriggerEnter (Collider col)
     {
         // Catch the object the player is colliding with
-        if (col.gameObject.tag == "Button" || col.gameObject.tag == "DynamicObject") 
+        if (col.gameObject.tag == "Button") 
             m_proximityObject = col.gameObject;
+
+
+        if (col.gameObject.tag == "DynamicObject")
+        {
+            // Make sure the dynamic object can be held
+            if (col.GetComponent<velocityMemory>().m_canBeHold)
+                m_proximityObject = col.gameObject;
+        }
+
         
     }
 
     private void OnTriggerExit (Collider col)
     {
         // Return null when object is leaving
-        if (col.gameObject.tag == "Button" || col.gameObject.tag == "DynamicObject") 
+        if (col.gameObject.tag == "Button") 
             m_proximityObject = null;
         
+
+        if (col.gameObject.tag == "DynamicObject")
+        {
+            // Make sure the dynamic object can be held
+            if (col.GetComponent<velocityMemory>().m_canBeHold)
+                m_proximityObject = null;
+        }
     }
 
 
@@ -127,6 +143,14 @@ public class pickUpManager : MonoBehaviour
     // Holding an object in front of the player --------------------------------------
     private void hold()
     {
+        // Make sure the object can be taken
+        if (!m_proximityObject.GetComponent<velocityMemory>().m_canBeHold)
+        {
+            m_proximityObject = null;
+            m_canInteract = true;
+            return;
+        }
+
         // Set the obbject as a child
         m_proximityObject.transform.SetParent(transform);
 

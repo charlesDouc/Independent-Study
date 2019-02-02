@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9170768693725045043}
   - component: {fileID: 9170768693725045040}
   - component: {fileID: 9170768693725045041}
+  - component: {fileID: 1982596601211580858}
   - component: {fileID: 7432169893991143098}
   - component: {fileID: 5297986597615161295}
   - component: {fileID: 3219753832207400334}
@@ -296,6 +297,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &1982596601211580858
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170768693725045047}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.80550575, z: 2}
+  m_Center: {x: 0, y: 0.24757957, z: 0}
 --- !u!65 &7432169893991143098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -324,7 +338,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &3219753832207400334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,3 +351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75260e282fd03fc418038d81eb6e8f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_canBeHold: 0
+  m_affectPlayer: 0
+  m_player: {fileID: 0}

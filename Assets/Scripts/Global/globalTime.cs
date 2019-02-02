@@ -21,8 +21,8 @@ public class globalTime : MonoBehaviour
 	// ------------------------------------
 	// Use this for initialization
 	// ------------------------------------
-	void Start () {
-	
+	void Start () 
+	{
 
 	}
 	
@@ -30,7 +30,8 @@ public class globalTime : MonoBehaviour
 	// ------------------------------------
 	// Update is called once per frame
 	// ------------------------------------
-	void Update () {
+	void Update () 
+	{
 		// If the time is not stopped, calculate time
 		// Otherwise, stop motion in the scene
 		if (!globalVariables.timeStopped) 
@@ -48,22 +49,26 @@ public class globalTime : MonoBehaviour
 	// Methods
 	// ------------------------------------
 	// Calculate Time current time in the scene ---------------------
-	public void currentTime() {
+	public void currentTime() 
+	{
 		// Count time as it pass.
 		seconds += Time.deltaTime;
 
 		// Add a minute, restart seconds each 60 secs
-		if (seconds > 60f) {
+		if (seconds > 60f) 
+		{
 			minutes ++;
 			seconds = 0f;
 		}
 		// Add an hour, restat minutes
-		if (minutes > 59f) {
+		if (minutes > 59f) 
+		{
 			hour ++;
 			minutes = 0f;
 		}
 		// Restart clock at 24
-		if (hour > 11f) {
+		if (hour > 11f) 
+		{
 			hour = 0f;
 			// Invert AM PM
 			PM = !PM;
@@ -77,13 +82,15 @@ public class globalTime : MonoBehaviour
 
 
 	// Stop motion of all objects in the scene ----------------------
-	public void stopMotion() {
+	public void stopMotion() 
+	{
 		// Get all dynamic (can be grabbed) objects in the scene
 		GameObject[] gravityObjects;
 		gravityObjects = GameObject.FindGameObjectsWithTag("DynamicObject");
 
 		// For each object, disable gravity (so they stop motion)
-		foreach (GameObject gravityObject in gravityObjects) {
+		foreach (GameObject gravityObject in gravityObjects) 
+		{
 			// Remember current Velocity of the moving object
 			gravityObject.GetComponent<velocityMemory>().catchVelocity();
 			gravityObject.GetComponent<Rigidbody>().isKinematic = true;
@@ -95,13 +102,15 @@ public class globalTime : MonoBehaviour
 
 
 	// Restart motion of all objects in the scene -------------------
-	public void restartMotion() {
+	public void restartMotion() 
+	{
 		// Get all dynamic (can be grabbed) objects in the scene
 		GameObject[] gravityObjects;
 		gravityObjects = GameObject.FindGameObjectsWithTag("DynamicObject");
 
 		// For each object, disable gravity (so they stop motion)
-		foreach (GameObject gravityObject in gravityObjects) {
+		foreach (GameObject gravityObject in gravityObjects) 
+		{
 			gravityObject.GetComponent<Rigidbody>().isKinematic = false;
 			// Return the correct velocity to the object
 			gravityObject.GetComponent<velocityMemory>().returnVelocity();

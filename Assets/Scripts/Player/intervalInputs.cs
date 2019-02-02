@@ -60,17 +60,10 @@ public class intervalInputs : MonoBehaviour
 		} 
 		else // If time is normal
         {
-			// If time is not stopped
 			m_currentProfile.profile = m_defaultProfile;
 			// Set the global variable
 			globalVariables.timeStopped = m_timeStop;
 		}
-
-
-		// Interact with objects (action key)
-		if (Input.GetButtonDown("Action") && m_canInteract 
-			&& m_proximityObject != null && !m_timeStop)
-			makeInteraction();
     }
 
 
@@ -84,19 +77,5 @@ public class intervalInputs : MonoBehaviour
 	}
 
 
-	private void makeInteraction() 
-	{
-		// Disable interaction
-		m_canInteract = false;
 
-		// Check if its a button
-		if (m_proximityObject.tag == "Button")
-			m_proximityObject.GetComponent<btnManager>().m_on = true;
-	}
-
-	private void OnCollisionEnter(Collision col)
-	{
-		// Catch the object the player is colliding with
-		m_proximityObject = col.gameObject;
-	}
 }
