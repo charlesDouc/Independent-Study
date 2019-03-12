@@ -23,7 +23,7 @@ public class btnManager : MonoBehaviour
     // private variables ---------------------
     private float m_timer = 0.0f;       // Timer when btn is activated
     private bool m_oneShot;             // Only do the effect once after activation
-    private bool m_fixedBtn = false;            // If the btn is fixed on a state
+    private bool m_fixedBtn = false;    // If the btn is fixed on a state
 
 
     // --------------------------------------
@@ -41,7 +41,7 @@ public class btnManager : MonoBehaviour
         m_oneShot = false;
 
         // If the target is a door
-        if (m_doorBtn && m_target != null)
+        if (m_doorBtn && m_on && m_target != null)
             m_target.SetActive(true);
     }
 
@@ -51,7 +51,7 @@ public class btnManager : MonoBehaviour
     void Update()
     {   
         // Run the timer and effect if btn is activated
-        if (m_on  && !m_fixedBtn)
+        if (m_on && !m_fixedBtn)
         {
             runTimer();
 
@@ -91,7 +91,7 @@ public class btnManager : MonoBehaviour
         gameObject.GetComponent<Renderer>().material = m_green;
 
         // If the target is a door
-        if (m_doorBtn && m_target)
+        if (m_doorBtn)
             m_target.SetActive(false);
 
         // If the target is a canon
