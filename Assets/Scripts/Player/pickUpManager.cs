@@ -74,6 +74,9 @@ public class pickUpManager : MonoBehaviour
             // Keep the object stick on original point and follow other colliders
             float step = 5f * Time.deltaTime;
             m_proximityObject.transform.localPosition = Vector3.MoveTowards(m_proximityObject.transform.localPosition, transform.localPosition, step);
+
+            if (globalVariables.timeStopped)
+                dropObject();
         }
 
     }
@@ -172,9 +175,6 @@ public class pickUpManager : MonoBehaviour
 
         //Currently holding an object
         m_holding = true;
-
-        // Can't stop time while grabing
-		 m_player.GetComponent<intervalInputs>().m_canStop = false;
     }
 
 
@@ -201,9 +201,28 @@ public class pickUpManager : MonoBehaviour
 
         // Set on the box collider
         m_boxCol.enabled = true;
+    }
 
-        // Can stop time while grabing
-		 m_player.GetComponent<intervalInputs>().m_canStop = true;
+
+    // If the player is stopping time while holding an object, drop it
+    private void dropObject()
+    {
+        // Reset object rigidbody values
+        Rigidbody m_objectRB = m_proximityObject.GetComponent<Rigidbody>();
+        m_objectRB.drag = m_originalDrag;
+        m_objectRB.angularDrag = m_originalAngDrag;
+        m_objectRB.useGravity = true;
+
+        // Get rid of the object
+        m_proximityObject.transform.parent = null;
+        m_proximityObject = null;
+
+        // Reable interaction
+        m_canInteract = true;
+        m_holding = false;
+
+        // Set on the box collider
+        m_boxCol.enabled = true;
     }
 
 

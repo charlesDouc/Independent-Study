@@ -43,30 +43,4 @@ public class velocityMemory: MonoBehaviour
             m_rb.velocity = m_currentVelocity;
     }
 
-
-    private void OnTriggerStay (Collider col)
-    {
-
-    }
-
-    private void OnTriggerExit(Collider col)
-    {
-    
-    }
-    
-
-    public void giveVelocity()
-    {
-        Rigidbody playerRB = m_player.gameObject.GetComponent<Rigidbody>();
-        m_playerVelocity = playerRB.velocity;
-
-        playerRB.velocity = m_currentVelocity;
-
-        m_player = null;
-
-        m_affectPlayer = false;
-
-        Debug.Log("Gave velocity");
-    }
-
 }

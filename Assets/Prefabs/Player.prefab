@@ -424,7 +424,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.7
-  m_Radius: 0.4
+  m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -681,7 +681,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_canStop: 1
   m_timeStop: 0
-  m_counter: 0
   m_intervalProfile: {fileID: 11400000, guid: 93f8a9859daa9954ca2f97157b9134b4, type: 2}
   m_defaultProfile: {fileID: 11400000, guid: a913c2f8a8dfe934f97893479d5296dc, type: 2}
   m_proximityObject: {fileID: 0}

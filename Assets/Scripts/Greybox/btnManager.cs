@@ -12,14 +12,18 @@ public class btnManager : MonoBehaviour
     public bool m_on = false;           // State of the btn on/off
     public bool m_doorBtn;              // If the btn serves for a door
     public bool m_canonBtn;             // If the btn serves for a canon
+    public bool m_sendSignal;           // Colour rooms sender of signal
+    public bool m_catchSignal;          // Colour rooms receiver of signal
     [Header("Special Data")]
     public float m_counterLimit;        // Float for the limit of the counter
     public GameObject m_target;         // Specific target (door, trigger, object)
+    public GameObject m_receiver;       // Receiver object to a signal
 
 
     // private variables ---------------------
     private float m_timer = 0.0f;       // Timer when btn is activated
     private bool m_oneShot;             // Only do the effect once after activation
+    private bool m_fixedBtn = false;            // If the btn is fixed on a state
 
 
     // --------------------------------------
@@ -47,7 +51,7 @@ public class btnManager : MonoBehaviour
     void Update()
     {   
         // Run the timer and effect if btn is activated
-        if (m_on)
+        if (m_on  && !m_fixedBtn)
         {
             runTimer();
 
@@ -55,8 +59,12 @@ public class btnManager : MonoBehaviour
             if (!m_oneShot)
                 btnEffect();
         } 
-        else if (!m_on) // if off, reset                      
+        else if (!m_on && !m_fixedBtn) // if off, reset                      
             Start(); 
+
+        // If the btn is now complete and don't change anymore
+        if (m_fixedBtn)
+            fixedEffect();
         
     }
 
@@ -93,5 +101,26 @@ public class btnManager : MonoBehaviour
             m_oneShot = true;
             m_target.GetComponent<canonController>().m_fire = true;
         }
+
+        // If the btn is for sending signal 
+        if (m_sendSignal)
+        {
+            // Get the data of the receiver
+            if (m_receiver.GetComponent<btnManager>().m_on)
+            {
+                // Deactivate the target and change the state of the btn to fixed
+                m_target.SetActive(false);
+                m_fixedBtn = true;
+
+                // Fixed the btn of the receiver too
+                m_receiver.GetComponent<btnManager>().m_fixedBtn = true;
+            }
+        }
+    }
+
+    private void fixedEffect()
+    {
+        // Change colour of the btn
+        gameObject.GetComponent<Renderer>().material = m_green;
     }
 }
