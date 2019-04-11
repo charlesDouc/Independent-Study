@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: e470b6ef169a3c242adb83aebbcd4a8d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ClockFrame
+    100004: Columns.L
+    100006: Columns.R
+    100008: Cylinder
+    100010: DoorFrame
+    100012: Floor
+    100014: FloorBorder.L
+    100016: FloorBorder.R
+    100018: Ramp.L
+    100020: Ramp.R
+    100022: Roof
+    100024: RoofBG
+    100026: Stairs
+    100028: Top.L
+    100030: Top.R
+    100032: Wall.b
+    100034: Wall.f
+    100036: Wall.L
+    100038: Wall.R
+    100040: WallLight.L
+    100042: WallLight.R
+    100044: BtnPodium
+    400000: //RootNode
+    400002: ClockFrame
+    400004: Columns.L
+    400006: Columns.R
+    400008: Cylinder
+    400010: DoorFrame
+    400012: Floor
+    400014: FloorBorder.L
+    400016: FloorBorder.R
+    400018: Ramp.L
+    400020: Ramp.R
+    400022: Roof
+    400024: RoofBG
+    400026: Stairs
+    400028: Top.L
+    400030: Top.R
+    400032: Wall.b
+    400034: Wall.f
+    400036: Wall.L
+    400038: Wall.R
+    400040: WallLight.L
+    400042: WallLight.R
+    400044: BtnPodium
+    2100000: No Name
+    2100002: DefaultHDMaterial
+    2100004: BTN
+    2100006: BtnPodium
+    2300000: ClockFrame
+    2300002: Columns.L
+    2300004: Columns.R
+    2300006: Cylinder
+    2300008: DoorFrame
+    2300010: Floor
+    2300012: FloorBorder.L
+    2300014: FloorBorder.R
+    2300016: Ramp.L
+    2300018: Ramp.R
+    2300020: Roof
+    2300022: RoofBG
+    2300024: Stairs
+    2300026: Top.L
+    2300028: Top.R
+    2300030: Wall.b
+    2300032: Wall.f
+    2300034: Wall.L
+    2300036: Wall.R
+    2300038: WallLight.L
+    2300040: WallLight.R
+    2300042: BtnPodium
+    2300044: //RootNode
+    3300000: ClockFrame
+    3300002: Columns.L
+    3300004: Columns.R
+    3300006: Cylinder
+    3300008: DoorFrame
+    3300010: Floor
+    3300012: FloorBorder.L
+    3300014: FloorBorder.R
+    3300016: Ramp.L
+    3300018: Ramp.R
+    3300020: Roof
+    3300022: RoofBG
+    3300024: Stairs
+    3300026: Top.L
+    3300028: Top.R
+    3300030: Wall.b
+    3300032: Wall.f
+    3300034: Wall.L
+    3300036: Wall.R
+    3300038: WallLight.L
+    3300040: WallLight.R
+    3300042: BtnPodium
+    3300044: //RootNode
+    4300000: WallLight.L
+    4300002: WallLight.R
+    4300004: Columns.L
+    4300006: Columns.R
+    4300008: ClockFrame
+    4300010: Floor
+    4300012: Ramp.L
+    4300014: Ramp.R
+    4300016: Roof
+    4300018: RoofBG
+    4300020: Stairs
+    4300022: Top.L
+    4300024: Top.R
+    4300026: Wall.L
+    4300028: Wall.R
+    4300030: Wall.b
+    4300032: Wall.f
+    4300034: DoorFrame
+    4300036: FloorBorder.L
+    4300038: FloorBorder.R
+    4300040: Cylinder
+    4300042: BTN
+    4300044: BtnPodium
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

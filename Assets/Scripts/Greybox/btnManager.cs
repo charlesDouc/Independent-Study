@@ -41,7 +41,7 @@ public class btnManager : MonoBehaviour
         m_oneShot = false;
 
         // If the target is a door
-        if (m_doorBtn && m_on && m_target != null)
+        if (m_doorBtn && !m_on && m_target)
             m_target.SetActive(true);
     }
 
