@@ -53,8 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\generalTriggers.cs" />
-     <Compile Include="Assets\playerCollisons.cs" />
+     <Compile Include="Assets\doorController.cs" />
+     <Compile Include="Assets\Scripts\generalTriggers.cs" />
      <Compile Include="Assets\Scripts\Global\globalTime.cs" />
      <Compile Include="Assets\Scripts\Global\globalVariables.cs" />
      <Compile Include="Assets\Scripts\Greybox\btnManager.cs" />
@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\Greybox\switchEvents.cs" />
      <Compile Include="Assets\Scripts\Player\intervalInputs.cs" />
      <Compile Include="Assets\Scripts\Player\pickUpManager.cs" />
+     <Compile Include="Assets\Scripts\Player\playerCollisons.cs" />
      <Compile Include="Assets\Scripts\UI\actionIconController.cs" />
      <Compile Include="Assets\Scripts\velocityMemory.cs" />
  <Reference Include="Unity.ProGrids">

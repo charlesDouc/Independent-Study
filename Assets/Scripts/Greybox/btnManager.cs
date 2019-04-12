@@ -42,7 +42,7 @@ public class btnManager : MonoBehaviour
 
         // If the target is a door
         if (m_doorBtn && !m_on && m_target)
-            m_target.SetActive(true);
+            m_target.GetComponent<doorController>().DoorState(false);
     }
 
     // --------------------------------------
@@ -92,7 +92,7 @@ public class btnManager : MonoBehaviour
 
         // If the target is a door
         if (m_doorBtn)
-            m_target.SetActive(false);
+            m_target.GetComponent<doorController>().DoorState(true);
 
         // If the target is a canon
         if (m_canonBtn && m_target)
