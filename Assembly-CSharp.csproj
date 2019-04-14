@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\doorController.cs" />
+     <Compile Include="Assets\movingPlatformController.cs" />
      <Compile Include="Assets\Scripts\generalTriggers.cs" />
      <Compile Include="Assets\Scripts\Global\globalTime.cs" />
      <Compile Include="Assets\Scripts\Global\globalVariables.cs" />

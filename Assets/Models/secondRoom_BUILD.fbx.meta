@@ -26,6 +26,9 @@ ModelImporter:
     100040: Wall.R
     100042: WallLight.L
     100044: WallLight.R
+    100046: Bahnch.L
+    100048: Banch.R
+    100050: PlatformLight
     400000: DoorFrame
     400002: Floor
     400004: FloorBorder
@@ -49,6 +52,9 @@ ModelImporter:
     400040: Wall.R
     400042: WallLight.L
     400044: WallLight.R
+    400046: Bahnch.L
+    400048: Banch.R
+    400050: PlatformLight
     2100000: No Name
     2100002: DefaultHDMaterial.001
     2300000: DoorFrame
@@ -73,6 +79,9 @@ ModelImporter:
     2300038: Wall.R
     2300040: WallLight.L
     2300042: WallLight.R
+    2300044: Bahnch.L
+    2300046: Banch.R
+    2300048: PlatformLight
     3300000: DoorFrame
     3300002: Floor
     3300004: FloorBorder
@@ -95,6 +104,9 @@ ModelImporter:
     3300038: Wall.R
     3300040: WallLight.L
     3300042: WallLight.R
+    3300044: Bahnch.L
+    3300046: Banch.R
+    3300048: PlatformLight
     4300000: Wall.B
     4300002: Wall.R
     4300004: Wall.L
@@ -117,6 +129,9 @@ ModelImporter:
     4300038: Top.R
     4300040: Top.L
     4300042: Hole.R
+    4300044: PlatformLight
+    4300046: Bahnch.L
+    4300048: Banch.R
     6400000: DoorFrame
     6400002: Floor
     6400004: FloorBorder
@@ -139,6 +154,9 @@ ModelImporter:
     6400038: Wall.R
     6400040: WallLight.L
     6400042: WallLight.R
+    6400044: Bahnch.L
+    6400046: Banch.R
+    6400048: PlatformLight
   externalObjects: {}
   materials:
     importMaterials: 1
