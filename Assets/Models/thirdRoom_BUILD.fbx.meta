@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 1110653e5603cff43914e6570b18d255
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Border
+    100002: DoorFrame
+    100004: Floor.B
+    100006: Floor.F
+    100008: Roof
+    100010: RoofBG
+    100012: Stairs
+    100014: Stairs.L
+    100016: Stairs.R
+    100018: //RootNode
+    100020: Top.L
+    100022: Top.R
+    100024: Wall.B
+    100026: Wall.F
+    100028: Wall.L
+    100030: Wall.R
+    100032: WallLight.L
+    100034: WallLight.R
+    400000: Border
+    400002: DoorFrame
+    400004: Floor.B
+    400006: Floor.F
+    400008: Roof
+    400010: RoofBG
+    400012: Stairs
+    400014: Stairs.L
+    400016: Stairs.R
+    400018: //RootNode
+    400020: Top.L
+    400022: Top.R
+    400024: Wall.B
+    400026: Wall.F
+    400028: Wall.L
+    400030: Wall.R
+    400032: WallLight.L
+    400034: WallLight.R
+    2100000: No Name
+    2100002: DefaultHDMaterial
+    2300000: Border
+    2300002: DoorFrame
+    2300004: Floor.B
+    2300006: Floor.F
+    2300008: Roof
+    2300010: RoofBG
+    2300012: Stairs
+    2300014: Stairs.L
+    2300016: Stairs.R
+    2300018: Top.L
+    2300020: Top.R
+    2300022: Wall.B
+    2300024: Wall.F
+    2300026: Wall.L
+    2300028: Wall.R
+    2300030: WallLight.L
+    2300032: WallLight.R
+    3300000: Border
+    3300002: DoorFrame
+    3300004: Floor.B
+    3300006: Floor.F
+    3300008: Roof
+    3300010: RoofBG
+    3300012: Stairs
+    3300014: Stairs.L
+    3300016: Stairs.R
+    3300018: Top.L
+    3300020: Top.R
+    3300022: Wall.B
+    3300024: Wall.F
+    3300026: Wall.L
+    3300028: Wall.R
+    3300030: WallLight.L
+    3300032: WallLight.R
+    4300000: Wall.B
+    4300002: Wall.L
+    4300004: Wall.F
+    4300006: Floor.F
+    4300008: Floor.B
+    4300010: Border
+    4300012: DoorFrame
+    4300014: Wall.R
+    4300016: Top.L
+    4300018: Top.R
+    4300020: Roof
+    4300022: RoofBG
+    4300024: WallLight.R
+    4300026: WallLight.L
+    4300028: Stairs
+    4300030: Stairs.L
+    4300032: Stairs.R
+    6400000: Border
+    6400002: DoorFrame
+    6400004: Floor.B
+    6400006: Floor.F
+    6400008: Roof
+    6400010: RoofBG
+    6400012: Stairs
+    6400014: Stairs.L
+    6400016: Stairs.R
+    6400018: Top.L
+    6400020: Top.R
+    6400022: Wall.B
+    6400024: Wall.F
+    6400026: Wall.L
+    6400028: Wall.R
+    6400030: WallLight.L
+    6400032: WallLight.R
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 40
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
