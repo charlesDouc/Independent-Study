@@ -21,6 +21,7 @@ ModelImporter:
     100030: Wall.R
     100032: WallLight.L
     100034: WallLight.R
+    100036: DoorFrame.001
     400000: Border
     400002: DoorFrame
     400004: Floor.B
@@ -39,6 +40,7 @@ ModelImporter:
     400030: Wall.R
     400032: WallLight.L
     400034: WallLight.R
+    400036: DoorFrame.001
     2100000: No Name
     2100002: DefaultHDMaterial
     2300000: Border
@@ -58,6 +60,7 @@ ModelImporter:
     2300028: Wall.R
     2300030: WallLight.L
     2300032: WallLight.R
+    2300034: DoorFrame.001
     3300000: Border
     3300002: DoorFrame
     3300004: Floor.B
@@ -75,6 +78,7 @@ ModelImporter:
     3300028: Wall.R
     3300030: WallLight.L
     3300032: WallLight.R
+    3300034: DoorFrame.001
     4300000: Wall.B
     4300002: Wall.L
     4300004: Wall.F
@@ -92,6 +96,7 @@ ModelImporter:
     4300028: Stairs
     4300030: Stairs.L
     4300032: Stairs.R
+    4300034: DoorFrame.001
     6400000: Border
     6400002: DoorFrame
     6400004: Floor.B
@@ -109,6 +114,7 @@ ModelImporter:
     6400028: Wall.R
     6400030: WallLight.L
     6400032: WallLight.R
+    6400034: DoorFrame.001
   externalObjects: {}
   materials:
     importMaterials: 1

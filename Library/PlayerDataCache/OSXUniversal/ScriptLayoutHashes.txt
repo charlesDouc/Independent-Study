@@ -1,6 +1,6 @@
 OSXUniversal
 PlayerPath?
-C:/Users/Charles/Desktop/PreDemo-Build.app
+/Users/CharlesDoucet/Desktop/Interval-Demo-V6.app
 SceneListBegin?
 Assets/Scenes/Tutorial stage - Greybox.unity
 SceneListEnd?
@@ -186,6 +186,7 @@ ce8b51825f400c98429a68dd93e6effc Assembly-CSharp.dll:.pickUpManager
 d6fc8d3165070298511ec776ea575626 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessResources
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 3e28b680344c43df20386f0f1a3deb56 Assembly-CSharp.dll:.actionIconController
+530a9ba744f571b27af92f5a5a66619c Assembly-CSharp.dll:.doorController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.MobileControlRig
 a53651ee3996fbba20dfe0fce02f0b23 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.AutoExposure
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ObjectResetter
@@ -278,6 +279,7 @@ ac6acd886c54c48c599ab5fed5781ea7 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 bb6b9a25e695d7981ce2d853a697a828 Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.UI.DebugUIHandlerVector4
 8d35f16c5022311c6f4d9432be73bfcf Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.UI.DebugUIHandlerIntField
 03ed12bb5dfb6513473b48819054a126 Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.HDPipeline.HDAdditionalLightData
+530a9ba744f571b27af92f5a5a66619c Assembly-CSharp.dll:.movingPlatformController
 ca0b8ad3987cd33b3209a508b6e1562e Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.FreeCamera
 1b6b4223b6c3880d6b7a9fd4f0b9f594 Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.HDPipeline.HDAdditionalCameraData
 1f0602e7bad1e0a9cba31ce292eee8bb Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.UI.DebugUIHandlerHBox
